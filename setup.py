@@ -28,18 +28,19 @@ setup(
     description="OpenWISP Radius",
     long_description=open("README.rst").read(),
     url="https://openwisp.org",
-    download_url="https://github.com/openwisp/openwisp-radius/releases",
+    #download_url="https://github.com/openwisp/openwisp-radius/releases",
     platforms=["Platform Independent"],
     keywords=["django", "freeradius", "networking", "openwisp"],
     packages=find_packages(exclude=["tests*", "docs*"]),
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        "openwisp-users @ https://github.com/openwisp/openwisp-users/tarball/1.2",
-        (
-            "openwisp-utils[rest,celery]"
-            " @ https://github.com/openwisp/openwisp-utils/tarball/1.2"
-        ),
+        "git+https://github.com/Insatroute/openwisp-users.git@main#egg=openwisp_users",
+        # (
+        #     "openwisp-utils[rest,celery]"
+        #     " @ https://github.com/openwisp/openwisp-utils/tarball/1.2"
+        # ),
+        "git+https://github.com/Insatroute/openwisp-utils.git@main#egg=openwisp_utils[rest,celery]"
         "passlib~=1.7.1",
         "djangorestframework-link-header-pagination~=0.1.1",
         "weasyprint>=65,<67",
