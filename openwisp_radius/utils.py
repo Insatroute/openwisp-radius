@@ -29,7 +29,7 @@ logger = logging.getLogger(__name__)
 
 
 def load_model(model):
-    return swapper.load_model("openwisp_radius", model)
+    return swapper.load_model("nexapp_radius", model)
 
 
 def get_model(apps, model_path):
@@ -44,9 +44,9 @@ def get_swapped_model(apps, app_name, model_name):
 
 def create_default_groups(organization, apps=None):
     if apps is not None:
-        RadiusGroup = get_swapped_model(apps, "openwisp_radius", "RadiusGroup")
+        RadiusGroup = get_swapped_model(apps, "nexapp_radius", "RadiusGroup")
         RadiusGroupCheck = get_swapped_model(
-            apps, "openwisp_radius", "RadiusGroupCheck"
+            apps, "nexapp_radius", "RadiusGroupCheck"
         )
     else:
         RadiusGroup = load_model("RadiusGroup")

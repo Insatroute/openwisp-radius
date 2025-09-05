@@ -8,7 +8,7 @@ from openwisp_radius import settings as app_settings
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("openwisp_radius", "0033_alter_organizationradiussettings_password_reset_url"),
+        ("nexapp_radius", "0033_alter_organizationradiussettings_password_reset_url"),
     ]
 
     operations = [

@@ -8,7 +8,7 @@ from openwisp_radius import settings as app_settings
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("openwisp_radius", "0031_added_fallback_model_fields"),
+        ("nexapp_radius", "0031_added_fallback_model_fields"),
     ]
 
     operations = [

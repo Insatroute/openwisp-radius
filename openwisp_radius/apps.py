@@ -28,7 +28,7 @@ from .utils import load_model, update_user_related_records
 
 class OpenwispRadiusConfig(ApiAppConfig):
     name = "openwisp_radius"
-    label = "openwisp_radius"
+    label = "nexapp_radius"
     verbose_name = "Freeradius"
 
     API_ENABLED = True
@@ -100,32 +100,32 @@ class OpenwispRadiusConfig(ApiAppConfig):
         pre_save.connect(
             organization_pre_save,
             sender=Organization,
-            dispatch_uid="openwisp_radius_org_pre_save",
+            dispatch_uid="nexapp_radius_org_pre_save",
         )
         post_save.connect(
             organization_post_save,
             sender=Organization,
-            dispatch_uid="openwisp_radius_org_post_save",
+            dispatch_uid="nexapp_radius_org_post_save",
         )
         post_delete.connect(
             self.radiustoken_post_delete,
             sender=RadiusToken,
-            dispatch_uid="openwisp_radius_radiustoken_post_delete",
+            dispatch_uid="nexapp_radius_radiustoken_post_delete",
         )
         post_save.connect(
             self.radiusorgsettings_post_save,
             sender=OrganizationRadiusSettings,
-            dispatch_uid="openwisp_radius_organizationradiussettings_post_save",
+            dispatch_uid="nexapp_radius_organizationradiussettings_post_save",
         )
         post_delete.connect(
             self.radiusorgsettings_post_delete,
             sender=OrganizationRadiusSettings,
-            dispatch_uid="openwisp_radius_organizationradiussettings_post_delete",
+            dispatch_uid="nexapp_radius_organizationradiussettings_post_delete",
         )
         post_save.connect(
             close_previous_radius_accounting_sessions,
             sender=RadiusAccounting,
-            dispatch_uid="openwisp_radius_close_previous_radius_accounting_sessions",
+            dispatch_uid="nexapp_radius_close_previous_radius_accounting_sessions",
         )
         pre_save.connect(
             radius_user_group_change,
@@ -136,7 +136,7 @@ class OpenwispRadiusConfig(ApiAppConfig):
             post_save.connect(
                 convert_radius_called_station_id,
                 sender=RadiusAccounting,
-                dispatch_uid="openwisp_radius_convert_called_station_id",
+                dispatch_uid="nexapp_radius_convert_called_station_id",
             )
 
     def radiustoken_post_delete(self, instance, **kwargs):

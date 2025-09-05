@@ -32,7 +32,7 @@ class Migration(migrations.Migration):
         swapper.dependency(
             *swapper.split(settings.AUTH_USER_MODEL), version="0004_default_groups"
         ),
-        ("openwisp_radius", "0001_initial_freeradius"),
+        ("nexapp_radius", "0001_initial_freeradius"),
     ]
 
     operations = [

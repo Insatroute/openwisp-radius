@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "allauth.socialaccount.providers.google",
     # openwisp radius
     "openwisp_radius",
+    # "openwisp_radius.apps.OpenwispRadiusConfig",
     # openwisp2 admin theme
     # (must be loaded here)
     "openwisp_utils.admin_theme",

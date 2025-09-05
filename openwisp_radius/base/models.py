@@ -1007,7 +1007,7 @@ class AbstractRadiusBatch(OrgMixin, TimeStampedEditableModel):
 
     def save_user(self, user):
         OrganizationUser = swapper.load_model("openwisp_users", "OrganizationUser")
-        RegisteredUser = swapper.load_model("openwisp_radius", "RegisteredUser")
+        RegisteredUser = swapper.load_model("nexapp_radius", "RegisteredUser")
         user.save()
         registered_user = RegisteredUser(user=user, method="manual")
         if self.organization.radius_settings.needs_identity_verification:

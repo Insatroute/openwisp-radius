@@ -7,7 +7,7 @@ import openwisp_utils.fields
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("openwisp_radius", "0035_organizationradiussettings_sms_cooldown"),
+        ("nexapp_radius", "0035_organizationradiussettings_sms_cooldown"),
     ]
 
     operations = [

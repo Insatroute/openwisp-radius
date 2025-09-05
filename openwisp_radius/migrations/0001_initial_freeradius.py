@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
     """
 
     initial = True
-    dependencies = [("openwisp_radius", "__first__")]
+    dependencies = [("nexapp_radius", "__first__")]
 
     operations = [
         migrations.CreateModel(

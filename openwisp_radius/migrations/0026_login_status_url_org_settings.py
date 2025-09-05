@@ -5,7 +5,7 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("openwisp_radius", "0025_sms_verification"),
+        ("nexapp_radius", "0025_sms_verification"),
     ]
 
     operations = [

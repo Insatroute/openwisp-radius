@@ -3,7 +3,7 @@ from django.urls import reverse
 from swapper import load_model
 
 Device = load_model("config", "Device")
-RadiusAccounting = load_model("openwisp_radius", "RadiusAccounting")
+RadiusAccounting = load_model("nexapp_radius", "RadiusAccounting")
 
 BaseDeviceAdmin = admin.site._registry[Device].__class__
 

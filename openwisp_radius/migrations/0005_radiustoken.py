@@ -10,7 +10,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ("openwisp_radius", "0004_default_permissions"),
+        ("nexapp_radius", "0004_default_permissions"),
     ]
 
     operations = [

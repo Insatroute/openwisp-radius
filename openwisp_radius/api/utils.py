@@ -8,7 +8,7 @@ from .. import settings as app_settings
 logger = logging.getLogger(__name__)
 
 Organization = load_model("openwisp_users", "Organization")
-OrganizationRadiusSettings = load_model("openwisp_radius", "OrganizationRadiusSettings")
+OrganizationRadiusSettings = load_model("nexapp_radius", "OrganizationRadiusSettings")
 
 
 class ErrorDictMixin(object):

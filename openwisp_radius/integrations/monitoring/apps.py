@@ -23,7 +23,7 @@ from .utils import (
 
 class OpenwispRadiusMonitoringConfig(AppConfig):
     name = "openwisp_radius.integrations.monitoring"
-    label = "openwisp_radius_monitoring"
+    label = "nexapp_radius_monitoring"
     verbose_name = _("OpenWISP RADIUS Monitoring")
 
     def ready(self):
@@ -38,7 +38,7 @@ class OpenwispRadiusMonitoringConfig(AppConfig):
             config={
                 "name": _("Today's RADIUS sessions"),
                 "query_params": {
-                    "app_label": "openwisp_radius",
+                    "app_label": "nexapp_radius",
                     "model": "radiusaccounting",
                     "filter": {
                         # This will filter the sessions for today
@@ -79,7 +79,7 @@ class OpenwispRadiusMonitoringConfig(AppConfig):
             config={
                 "name": _("Today's RADIUS traffic (GB)"),
                 "query_params": {
-                    "app_label": "openwisp_radius",
+                    "app_label": "nexapp_radius",
                     "model": "radiusaccounting",
                     "filter": {
                         # This will filter the sessions for today
@@ -123,7 +123,7 @@ class OpenwispRadiusMonitoringConfig(AppConfig):
     def connect_signal_receivers(self):
         from .receivers import post_save_radiusaccounting
 
-        RadiusAccounting = load_model("openwisp_radius", "RadiusAccounting")
+        RadiusAccounting = load_model("nexapp_radius", "RadiusAccounting")
 
         post_save.connect(
             post_save_radiusaccounting,

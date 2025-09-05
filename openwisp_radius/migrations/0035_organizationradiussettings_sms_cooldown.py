@@ -9,7 +9,7 @@ from .. import settings as app_settings
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("openwisp_radius", "0034_organizationradiussettings_coa_enabled"),
+        ("nexapp_radius", "0034_organizationradiussettings_coa_enabled"),
     ]
 
     operations = [

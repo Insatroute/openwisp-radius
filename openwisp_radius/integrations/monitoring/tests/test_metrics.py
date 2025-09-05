@@ -15,7 +15,7 @@ from .mixins import CreateDeviceMonitoringMixin
 
 TASK_PATH = "openwisp_radius.integrations.monitoring.tasks"
 
-RegisteredUser = load_model("openwisp_radius", "RegisteredUser")
+RegisteredUser = load_model("nexapp_radius", "RegisteredUser")
 User = get_user_model()
 
 

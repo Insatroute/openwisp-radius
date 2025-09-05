@@ -7,7 +7,7 @@ from ..base.models import _GET_OPTIONAL_FIELDS_HELP_TEXT
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("openwisp_radius", "0019_made_phonetoken_phone_number_required"),
+        ("nexapp_radius", "0019_made_phonetoken_phone_number_required"),
     ]
 
     operations = [

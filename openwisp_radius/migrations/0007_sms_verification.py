@@ -16,7 +16,7 @@ from .. import settings as app_settings
 class Migration(migrations.Migration):
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ("openwisp_radius", "0006_add_radactt_fields"),
+        ("nexapp_radius", "0006_add_radactt_fields"),
     ]
 
     operations = [

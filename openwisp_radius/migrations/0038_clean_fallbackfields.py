@@ -48,7 +48,7 @@ def clean_fallback_fields(apps, schema_editor):
 class Migration(migrations.Migration):
     dependencies = [
         (
-            "openwisp_radius",
+            "nexapp_radius",
             "0037_alter_organizationradiussettings_allowed_mobile_prefixes_and_more",
         ),
     ]

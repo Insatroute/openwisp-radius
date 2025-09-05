@@ -5,7 +5,7 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("openwisp_radius", "0029_remove_check_customizations"),
+        ("nexapp_radius", "0029_remove_check_customizations"),
     ]
 
     operations = [

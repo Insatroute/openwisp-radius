@@ -12,8 +12,8 @@ from .utils import clean_registration_method, sha1_hash
 
 Metric = load_model("monitoring", "Metric")
 Chart = load_model("monitoring", "Chart")
-RegisteredUser = load_model("openwisp_radius", "RegisteredUser")
-RadiusAccounting = load_model("openwisp_radius", "RadiusAccounting")
+RegisteredUser = load_model("nexapp_radius", "RegisteredUser")
+RadiusAccounting = load_model("nexapp_radius", "RadiusAccounting")
 OrganizationUser = load_model("openwisp_users", "OrganizationUser")
 Device = load_model("config", "Device")
 DeviceLocation = load_model("geo", "Location")

@@ -7,7 +7,7 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("openwisp_radius", "0012_populate_uuid_field"),
+        ("nexapp_radius", "0012_populate_uuid_field"),
     ]
 
     operations = [

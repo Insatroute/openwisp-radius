@@ -14,7 +14,7 @@ from openwisp_radius.registration import (
 class Migration(migrations.Migration):
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ("openwisp_radius", "0022_organizationradiussettings_registration_enabled"),
+        ("nexapp_radius", "0022_organizationradiussettings_registration_enabled"),
     ]
 
     operations = [
