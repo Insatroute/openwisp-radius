@@ -28,7 +28,7 @@ class Migration(migrations.Migration):
                         primary_key=True,
                         related_name="registered_user",
                         serialize=False,
-                        to="openwisp_users.user",
+                        to="nexapp_users.user",
                     ),
                 ),
                 (
