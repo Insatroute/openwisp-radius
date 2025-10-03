@@ -65,12 +65,12 @@ INSTALLED_APPS = [
 LOGIN_REDIRECT_URL = "admin:index"
 
 AUTHENTICATION_BACKENDS = (
-    "openwisp_users.backends.UsersAuthenticationBackend",
+    "nexapp_users.backends.UsersAuthenticationBackend",
     "openwisp_radius.saml.backends.OpenwispRadiusSaml2Backend",
     "sesame.backends.ModelBackend",
 )
 
-AUTH_USER_MODEL = "openwisp_users.User"
+AUTH_USER_MODEL = "nexapp_users.User"
 SITE_ID = 1
 
 STATICFILES_FINDERS = [
